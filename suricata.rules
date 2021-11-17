@@ -1,0 +1,2 @@
+alert iec104 any any -> any 2404 (msg:"Simple detect of iec104!<3"; content: "|68|"; startswith; sid: 1; rev: 1;)
+#alert tcp any any -> any 2404 (msg:"Trying START byte 68"; iec104_iec104buf; sid: 2; rev: 2;)
